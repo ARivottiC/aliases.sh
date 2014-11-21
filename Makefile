@@ -12,6 +12,7 @@ uninstall:
 
 $(TARGET_DIR):
 	git clone https://github.com/ARivottiC/aliases.sh.git $@
+	cd $@ && git config core.fileMode false
 
 $(TARGET_FILE):
 	echo 'for x in $$(find ${TARGET_DIR} -type f -name "*.sh" -perm /555 | LC_COLLATE=C sort); do . $$x; done' >> $@

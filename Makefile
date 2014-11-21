@@ -15,7 +15,7 @@ $(TARGET_DIR):
 	cd $@ && git config core.fileMode false
 
 $(TARGET_FILE):
-	echo 'for x in $$(find ${TARGET_DIR} -type f -name "*.sh" -perm /555 | LC_COLLATE=C sort); do . $$x; done' >> $@
+	echo 'for x in $$(find ${TARGET_DIR} -type f -name "*.sh" -perm -555 | LC_COLLATE=C sort); do . $$x; done' >> $@
 
 .PHONY: ;
 # vim:noet:sw=4:ts=4

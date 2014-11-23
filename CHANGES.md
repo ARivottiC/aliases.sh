@@ -1,3 +1,6 @@
+* 1.03
+    added TERM-xterm-256color-italic.sh
+
 * 1.02
     Fixed Makefile and git-email and added git-push-apply
 

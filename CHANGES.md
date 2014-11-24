@@ -1,3 +1,8 @@
+* 1.04
+    Better Makefile
+    Fixed TERM-xterm-256color-italic.sh to work with old version of tic
+    More git aliases
+
 * 1.03
     added TERM-xterm-256color-italic.sh
 

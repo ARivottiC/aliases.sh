@@ -1,3 +1,7 @@
+* 1.05
+  * Added perlbrew
+  * Fixed markdown
+
 * 1.04
   * Better Makefile
   * Fixed TERM-xterm-256color-italic.sh to work with old version of tic

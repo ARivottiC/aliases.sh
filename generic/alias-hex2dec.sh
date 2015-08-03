@@ -1,2 +1,2 @@
 #!/bin/bash
-alias hex2dec="printf '%d' $1"
+alias hex2dec="printf '%d\n' $1"

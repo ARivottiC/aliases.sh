@@ -1,8 +1,8 @@
 #!/bin/bash
 # ignore duplicate commands
-grep -q ignoredups <<< $HISTCONTROL 2> /dev/null
+GREP_OPTIONS= grep -q ignoredups <<< $HISTCONTROL
 retval=$?
-if [ $retval -eq 0 ]; then
+if [ $retval -eq 1 ]; then
     export HISTCONTROL="$HISTCONTROL:ignoredups"
 fi
 unset retval

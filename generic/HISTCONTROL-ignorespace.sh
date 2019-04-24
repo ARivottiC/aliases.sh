@@ -1,8 +1,8 @@
 #!/bin/bash
 # ignore commands that have leading whitespace
-grep -q ignorespace <<< $HISTCONTROL 2> /dev/null
+GREP_OPTIONS= grep -q ignorespace <<< $HISTCONTROL
 retval=$?
-if [ $retval -eq 0 ]; then
+if [ $retval -eq 1 ]; then
     export HISTCONTROL="$HISTCONTROL:ignorespace"
 fi
 unset retval
